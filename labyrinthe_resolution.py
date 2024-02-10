@@ -224,9 +224,15 @@ class labyrinthe:
 tic = time.time()
 
 """Il faut que x et y d'entrée (ou sortie) soient du même type : 'auto' ou saisie manuelle"""
-carte = labyrinthe(101,101, "auto", "auto", "auto", "auto", 2, 1)
-# Paramètres : 
-# labyrinthe(largeur, hauteur, y_entrée, x_entrée, y_sortie, x_sortie, pas de la marche aléatoire)
+carte = labyrinthe(
+    largeur=101,
+    hauteur=101, 
+    ligne_entree="auto", 
+    colonne_entree="auto", 
+    ligne_sortie="auto", 
+    colonne_sortie="auto", 
+    pas=2, 
+    pad_width=1)
 
 carte.marche()
 tac = time.time()
