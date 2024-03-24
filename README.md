@@ -35,3 +35,7 @@ carte = labyrinthe(
 
 **Remarques** : Toutes les valeurs doivente être modifiées en connaissance de cause. Aucune vérification n'est effectuée sur la cohérence des valeurs.
 Par exemple : les valeurs _ligne_entree_, _colonne_entree_, _ligne_sortie_, _colonne_sortie_ doivent être inférieure à la taille du labyrinthe.
+
+# Exemples
+Voici une image de labyrinthe, avec sa solution, généré grâce à ce code en moins d'une seconde :
+![Screenshot of a labyrinth](/pictures/labyrinth01.png)
