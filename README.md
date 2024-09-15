@@ -1,14 +1,14 @@
 # Presentation
-Ce projet en Python génère un labyrinthe aléatoire et le résout de manière très rapide et efficace.
+This Python project generates a random maze and solves it very quickly and efficiently.
 
 # Installation
-- Installer les librairies Python
+- Install Python libraries
 ```sh
 pip install -r requirements.txt
 ```
 
-# Configuration de l'algorithme
-Les valeurs internes utilisées pour l'algorithme peuvent être modifiés dans le fichier `labyrinthe_resolution.py`.
+# Algorithm configuration
+The internal values used for the algorithm can be modified in the `labyrinthe_resolution.py` file.
 ```python
 carte = labyrinthe(
     largeur=101,
@@ -23,19 +23,18 @@ carte = labyrinthe(
 
 |argument|type|description|
 |-|-|-|
-|largeur|int|La largeur du labyrinthe en nombre de cases|
-|hauteur|int|La hauteur du labyrinthe en nombre de cases|
-|ligne_entree|int|x<sub>entrée</sub>|
-|colonne_entree|int|y<sub>entrée</sub>|
-|ligne_sortie|int|x<sub>sortie</sub>|
-|colonne_sortie|int|y<sub>sortie</sub>|
-|pas|int|La taille du pas de la marche aléaoire de génération du labyrinthe|
-|pad_width|str|La taille du contour extérieur du labyrinthe|
+|largeur|int|Maze width in number of squares|
+|hauteur|int|Maze height in number of squares|
+|ligne_entree|int|x<sub>entry</sub>|
+|colonne_entree|int|y<sub>entry</sub>|
+|ligne_sortie|int|x<sub>exit</sub>|
+|colonne_sortie|int|y<sub>exit</sub>|
+|pas|int|The step size of the maze generation random walk|
+|pad_width|str|The size of the outer contour of the labyrinth|
 
+**Notes**: All values must be modified with full knowledge of the facts. Values are not checked for consistency.
+For example: the values _ligne_entree_, _colonne_entree_, _ligne_sortie_, _colonne_sortie_ must be smaller than the size of the maze.
 
-**Remarques** : Toutes les valeurs doivente être modifiées en connaissance de cause. Aucune vérification n'est effectuée sur la cohérence des valeurs.
-Par exemple : les valeurs _ligne_entree_, _colonne_entree_, _ligne_sortie_, _colonne_sortie_ doivent être inférieure à la taille du labyrinthe.
-
-# Exemples
-Voici une image de labyrinthe, avec sa solution, généré grâce à ce code en moins d'une seconde :
+# Examples
+Here's an image of a maze, with its solution, generated with this code in less than a second:
 ![Screenshot of a labyrinth](/pictures/labyrinth01.png)
